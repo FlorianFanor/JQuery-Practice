@@ -11,15 +11,15 @@
     <div id="mainform">
       <h2>Simple jQuery Contact Form With Validation</h2>
       <!-- Required Div Starts Here-->
-      <form id="form" data-parsley-validate="">
+      <form id="form">
         <h3>Contact Form</h3>
         <p id="returnmessage"></p>
         <label>Name: <span>*</span></label>
         <input id="name" type="text" placeholder="Name"/>
         <label>Email: <span>*</span></label>
-        <input id="email" type="text" placeholder="Email" data-parsley-type="email"/>
+        <input id="email" type="email" placeholder="Email"/>
         <label>Contact No: <span>*</span></label>
-        <input id="contact" type="text" placeholder="10 digit Mobile no." data-parsley-type="integer" data-parsley-length="[7, 8]"/>
+        <input id="contact" type="text" placeholder="10 digit Mobile no." data-parsley-length="[7, 8]"/>
         <label>Message:</label>
         <textarea id="message" placeholder="Message......."></textarea>
         <input id="submit" type="submit" value="Send Message"/>

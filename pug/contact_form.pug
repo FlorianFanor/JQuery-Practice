@@ -10,7 +10,7 @@ html
     #mainform
       h2 Simple jQuery Contact Form With Validation
       // Required Div Starts Here
-      form#form(data-parsley-validate='')
+      form#form
         h3 Contact Form
         p#returnmessage
         label
@@ -20,11 +20,11 @@ html
         label
           | Email: 
           span *
-        input#email(type='text', placeholder='Email', data-parsley-type='email' )
+        input#email(type='email', placeholder='Email' )
         label
           | Contact No: 
           span *
-        input#contact(type='text', placeholder='10 digit Mobile no.', data-parsley-type="integer", data-parsley-length="[7, 8]")
+        input#contact(type='text', placeholder='10 digit Mobile no.', data-parsley-length="[7, 8]")
         label Message:
         textarea#message(placeholder='Message.......')
         input#submit(type='submit', value='Send Message')
