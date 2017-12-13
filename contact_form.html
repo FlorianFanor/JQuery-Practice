@@ -15,14 +15,14 @@
         <h3>Contact Form</h3>
         <p id="returnmessage"></p>
         <label>Name: <span>*</span></label>
-        <input id="name" type="text" placeholder="Name"/>
+        <input id="name" type="text" placeholder="Name" required="required"/>
         <label>Email: <span>*</span></label>
-        <input id="email" type="email" placeholder="Email"/>
+        <input id="email" type="email" placeholder="Email" required="required"/>
         <label>Contact No: <span>*</span></label>
-        <input id="contact" type="text" placeholder="10 digit Mobile no." data-parsley-length="[7, 8]"/>
+        <input id="contact" type="text" placeholder="10 digit Mobile no." data-parsley-length="[7, 8]" required="required"/>
         <label>Message:</label>
         <textarea id="message" placeholder="Message......."></textarea>
-        <input id="submit" type="submit" value="Send Message"/>
+        <button id="submit" type="submit" value="Send Message">Send Message</button>
       </form>
     </div>
   </body>

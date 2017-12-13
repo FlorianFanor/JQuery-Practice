@@ -16,15 +16,15 @@ html
         label
           | Name: 
           span *
-        input#name(type='text', placeholder='Name') 
+        input#name(type='text', placeholder='Name', required) 
         label
           | Email: 
           span *
-        input#email(type='email', placeholder='Email' )
+        input#email(type='email', placeholder='Email' required)
         label
           | Contact No: 
           span *
-        input#contact(type='text', placeholder='10 digit Mobile no.', data-parsley-length="[7, 8]")
+        input#contact(type='text', placeholder='10 digit Mobile no.', data-parsley-length="[7, 8]" required)
         label Message:
         textarea#message(placeholder='Message.......')
-        input#submit(type='submit', value='Send Message')
+        button#submit(type='submit', value='Send Message') Send Message
