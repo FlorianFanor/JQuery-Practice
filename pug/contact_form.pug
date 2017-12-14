@@ -3,11 +3,13 @@ html
     title Simple jQuery Contact Form With Validation
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
     link(rel='stylesheet', href='css/contact_form.css')
+    //link(rel='stylesheet', href='vendor/css/css/bootstrap.css')
     script(src='js/contact_form.js')
     script(src='js/parsley.js')
  
-  body
-    #mainform
+  body   
+    #mainform.container
+      button#toggle(type='button') Show form
       h2 Simple jQuery Contact Form With Validation
       // Required Div Starts Here
       form#form
@@ -27,4 +29,5 @@ html
         input#contact(type='text', placeholder='10 digit Mobile no.', data-parsley-length="[7, 8]" required)
         label Message:
         textarea#message(placeholder='Message.......')
-        button#submit(type='submit', value='Send Message') Send Message
+        input#submit(type='submit', value='Send Message') 
+      

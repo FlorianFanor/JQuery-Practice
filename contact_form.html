@@ -4,11 +4,13 @@
     <title>Simple jQuery Contact Form With Validation</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/contact_form.css"/>
+    <!--link(rel='stylesheet', href='vendor/css/css/bootstrap.css')-->
     <script src="js/contact_form.js"></script>
     <script src="js/parsley.js"></script>
   </head>
-  <body>
-    <div id="mainform">
+  <body>  
+    <div class="container" id="mainform">
+      <button id="toggle" type="button">Show form</button>
       <h2>Simple jQuery Contact Form With Validation</h2>
       <!-- Required Div Starts Here-->
       <form id="form">
@@ -22,7 +24,7 @@
         <input id="contact" type="text" placeholder="10 digit Mobile no." data-parsley-length="[7, 8]" required="required"/>
         <label>Message:</label>
         <textarea id="message" placeholder="Message......."></textarea>
-        <button id="submit" type="submit" value="Send Message">Send Message</button>
+        <input id="submit" type="submit" value="Send Message"/>
       </form>
     </div>
   </body>
